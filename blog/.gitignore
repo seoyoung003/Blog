@@ -1,0 +1,71 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node.js 의존성 패키지 폴더
+node_modules/
+
+# 빌드 출력 폴더
+build/
+dist/
+
+
+# 로컬 테스트 환경 파일
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 운영 체제별 파일
+.DS_Store
+Thumbs.db
+
+# IDE 설정 파일
+/.vscode/
+/.idea/
+
+# npm or yarn lock 파일 무시 (원하는 경우)
+/package-lock.json
+/yarn.lock
+
+# 프로젝트 루트에서 'coverage' 디렉토리 무시 (Jest 테스트 커버리지)
+coverage/
+
+# 오류 리포트 파일
+*.log
+
+# 잠금 파일
+*.pid
+*.seed
+
+# 가상 환경 설정 파일 
+*.env-cmdrc
+
+# 개별 환경 설정 파일
+*.local
+
+# 빌드된 프로젝트의 압축파일 무시
+*.zip
+*.tar.gz
+
+#Git
+.git
