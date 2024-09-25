@@ -20,6 +20,15 @@ function App() {
       <div className="black-nav"> 
         <h4 style={ {color : 'white', fontSize : '16px'} }>ReactBlog</h4>
       </div>
+
+      <button onClick={() => {
+        let copy = [...글제목];
+        copy[0] = '강남 우동 맛집';
+        copy[1] = '남자코트 추천';
+        copy[2] = "파이썬 독학"
+        set글제목(copy);
+      }}>가나다순 정렬</button>
+
       <button onClick={() => {
         let copy = [...글제목];
         copy[0] = '여자코트 추천'
@@ -39,8 +48,22 @@ function App() {
         <p>2월 17일 발행</p>
       </div>
       
+      <Modal></Modal>
+      
+      
     </div>
   );
+}
+
+
+function Modal() {
+  return (
+    <div className='modal'>
+        <h4>제목</h4>
+        <p>날짜</p>
+        <p>상세내용</p>
+    </div>
+  )
 }
 
 
