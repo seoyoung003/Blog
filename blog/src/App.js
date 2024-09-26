@@ -37,7 +37,7 @@ function App() {
         }}>글수정</button>
       <div className="list">
         <h4>{ 글제목[0] }<span onClick={ () => { set따봉(따봉+1) } }>👍</span> { 따봉 } </h4>
-        <p>2월 17일 발행</p>
+        <p >2월 17일 발행</p>
       </div>
       <div className="list">
         <h4>{ 글제목[1] }</h4>
@@ -49,7 +49,8 @@ function App() {
       </div>
       
       <Modal></Modal>
-      
+      <Modal></Modal>
+      <Modal></Modal>
       
     </div>
   );
